@@ -1,14 +1,24 @@
 package org.saddy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class Hello {
-    public static void main(String[] args) {
-        ArrayList<String> myList = new ArrayList<String>();
-        HashMap<String, String> hashMap = new HashMap<>();
+    static String name = "Saddam";
 
-        var myList1 = new ArrayList<String>();
-        var myMap = new HashMap<String, String>();
+    public void displayName() {
+        System.out.println("My Name is Saddam");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        printName();
+    }
+
+    public static void printName() {
+        System.out.println("My Name is: " + name);
+    }
+}
+
+class Calculator{
+    public void sum(int num1, int num2) {
+        System.out.println(num1+num2);
     }
 }
